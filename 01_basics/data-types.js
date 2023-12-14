@@ -40,7 +40,5 @@ console.log(add(100)(200)(300)(400)());
 
 let MyName1 = 'Anant Jadhav';
 
-let findMy = MyName1.length;
-
-console.log(findMy);
+console.log(MyName1.length-1);
 
