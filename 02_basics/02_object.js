@@ -36,5 +36,35 @@ youTubeUser.greetingTwo = function() {
     console.log(`Hello youtube ${this.name}`);
 }
 
-console.log(youTubeUser.greeting());
-console.log(youTubeUser.greetingTwo());
+/* console.log(youTubeUser.greeting());
+console.log(youTubeUser.greetingTwo()); */
+
+// how to merge two objects into one
+
+let obj1 = {
+    1: "a",
+    2: "b"
+}
+
+let obj2 = {
+    3: "c",
+    4: "d"
+}
+
+/* let obj3 = Object.assign({}, obj1, obj2); */
+
+let obj3 = {...obj1, ...obj2};
+
+/* console.log(obj3); */
+
+/* console.log(Object.keys(obj1));
+console.log(Object.values(obj2));
+console.log(Object.entries(obj1));
+
+console.log(obj2.hasOwnProperty(3)); */
+
+// OBJECT DESTRUCTURING
+
+const {subscribers: sub} = youTubeUser;
+
+console.log(sub);
