@@ -29,3 +29,34 @@ function logMessage(userName) {
 }
 
 console.log(logMessage());
+
+
+// add multiple values in the function ex shopping cart
+
+function calculateShoppingCart(...item) {
+    return item;
+}
+
+console.log(calculateShoppingCart(200, 300, 400, 500, 600, 900));
+
+//  how to access object properties in the function
+
+let regUser = {
+    fullName: "anant Jadhav",
+    passion: "coding"
+}
+
+function accessObject(myobject) {
+    console.log(`user name is ${myobject.fullName} and his passion is ${myobject.passion}`);
+}
+
+accessObject(regUser);
+
+
+const newArray = [123,456,789,845,621];
+
+function accessArray(getArray) {
+    return getArray[0];
+}
+
+console.log(accessArray(newArray));
