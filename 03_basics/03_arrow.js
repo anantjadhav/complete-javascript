@@ -23,3 +23,20 @@ user.welcomeMessage()
 }
 
 chai() */
+
+// arrow function example
+
+let hello = () => {
+    let username = 'Jadhav';
+    console.log(this.username);
+}
+
+hello()
+
+// impicit arrow function
+
+const addtwo = (num1, num2) => num1 + num2
+const addthree = (num1, num2) => (num1 + num2)
+
+console.log(addtwo(5,5));
+console.log(addthree(10,5));
