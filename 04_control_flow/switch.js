@@ -88,3 +88,14 @@ console.log(0 == '');
 
 // Nullish Coalescing Operator (??): null undefined
 
+let val1;
+val1 = 5 ?? 10;
+
+console.log(val1);
+
+
+// ternary operator
+
+const iceTea = 100;
+
+iceTea >= 80 ? console.log("Price less than 80") : console.log("Price greater than 80");
