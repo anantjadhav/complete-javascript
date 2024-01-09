@@ -41,3 +41,8 @@ for (let i = 1; i <= 20; i++) {
     }
     console.log(`Value of i is ${i}`);
 }
+
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+}
+
