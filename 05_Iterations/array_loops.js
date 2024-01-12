@@ -46,7 +46,47 @@ for (const key in programming) {
 // for each loop
 
 
-array.forEach(element => {
-    
-});
 
+const food = "salad"
+
+switch (food) {
+    case "oyster":
+        console.log('The taste of the sea');
+        break;
+    case "pizza":
+        console.log("A delicious pie");
+    default:
+        console.log('Enjoy your meal!');
+        break;
+}
+
+const coding = ['js', 'python', 'cpp', 'java', 'ruby'];
+
+/* coding.forEach( (val) => {
+    console.log(val);
+} ) */
+
+coding.forEach( (item, index, arr)=> {
+    console.log(item, index, arr);
+})
+
+
+const myCoding = [
+    {
+        languageName: 'javascript',
+        languageFile: 'js'
+    },
+    {
+        languageName: 'java',
+        languageFile: 'java'
+    },
+    {
+        languageName: 'python',
+        languageFile: 'py'
+    }
+];
+
+myCoding.forEach( (item)=> {
+    //console.log(item.languageName);
+    console.log(item.languageFile);
+} )
