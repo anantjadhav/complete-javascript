@@ -76,7 +76,3 @@ console.log(shoppingTotal);
 setTimeout(() => {
     console.log('hello anant!');
 }, 1200);
-
-setTimeout(() => {
-    console.log('how are you!');
-}, 2400);
