@@ -70,3 +70,13 @@ const shoppingCart = [
 const shoppingTotal = shoppingCart.reduce( (acc, item) =>  acc + item.price, 0  )
 
 console.log(shoppingTotal);
+
+// settimeout
+
+setTimeout(() => {
+    console.log('hello anant!');
+}, 1200);
+
+setTimeout(() => {
+    console.log('how are you!');
+}, 2400);
