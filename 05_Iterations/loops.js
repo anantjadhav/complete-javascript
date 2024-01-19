@@ -42,7 +42,10 @@ for (let i = 1; i <= 20; i++) {
     console.log(`Value of i is ${i}`);
 }
 
-for (let index = 0; index < array.length; index++) {
+/* for (let index = 0; index < array.length; index++) {
     const element = array[index];
 }
+ */
+let myarr = [1, 2, 3]
 
+console.log(myarr);
