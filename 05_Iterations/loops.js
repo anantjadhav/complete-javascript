@@ -47,5 +47,3 @@ for (let i = 1; i <= 20; i++) {
 }
  */
 let myarr = [1, 2, 3]
-
-console.log(myarr);
