@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM4</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+
+        //add
+        function addLanguage(langName) {
+            const li = document.createElement('li');
+            li.innerHTML = `${langName}`;
+            document.querySelector('.language').appendChild(li);
+        }
+
+        function addOptiLanguage(language) {
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(language));
+            document.querySelector('.language').appendChild(li);
+        }
+
+        addOptiLanguage('Golang');
+        addOptiLanguage('dot net');
+        addOptiLanguage('Golang');
+
+        //EDIT
+        const addSecondLang = document.querySelector('li:nth-child(2)');
+        const newLi = document.createElement('li');
+        newLi.textContent = "Ruby";
+        addSecondLang.replaceWith(newLi);
+
+
+        //remove
+        const lastChild = document.querySelector('li:last-child');
+        lastChild.remove();
+
+        
+    </script>
+</body>
+</html>
